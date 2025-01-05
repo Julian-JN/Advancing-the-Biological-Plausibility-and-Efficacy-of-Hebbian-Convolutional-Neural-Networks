@@ -160,7 +160,7 @@ if __name__ == "__main__":
     else:
         ZCA_White = 1e-3
     trn_set, tst_set, zca = get_data(dataset='cifar10', root='../datasets', batch_size=64,
-                                          whiten_lvl=None)
+                                          whiten_lvl=ZCA_White)
     print(f'Processing Testing batches: {len(trn_set)}')
 
     print("Initial Weight statistics")
